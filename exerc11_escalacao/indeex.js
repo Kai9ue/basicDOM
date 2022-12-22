@@ -32,7 +32,7 @@ function removePlayer() {
   //peguei o elemento a ser removido(ul) e inseri na variável
   const number = document.getElementById('numberRemove').value
 
-  //criei uma nova variavel e inseri o elemento(li) pelo id já criado na função anterior
+  //criei uma nova variavel e inseri o elemento(li) pelo id já criado na função anterior.
   const playerToRemove = document.getElementById('player-' + number)
 
   //pop-up de confirmação para remover o elemento da lista
