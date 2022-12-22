@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h3>Cadastre-se</h3>
+  <form action="">
+    <label for="name">Nome: </label>
+    <input type="text" name="name" id="name">
+    <label for="password">Senha: </label>
+    <input type="password" name="password" id="password">
+    <label for="passwordConfirmation">Confirme a senha: </label>
+    <input type="password" name="passwordConfirmation" id="passwordConfirmation">
+
+    <!-- (this) referencia o proprio elemento.
+    parentNode é a propriedade utlizada p/ acessar o nó pai do elemento dentro do contexto inserido
+    nó pai do button neste contexto é o FORM -->
+    <button onclick="register(this.parentNode)">Cadastrar!</button>
+  </form>
+
+  <script src="./index.js"></script>
+</body>
+</html>
