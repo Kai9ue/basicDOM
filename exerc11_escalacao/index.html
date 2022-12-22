@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escalaçao de time</title>
+  </head>
+  <body>
+    <h1>Escalaçao da seleção brasileira</h1>
+    <br />
+    <hr />
+    <h3>
+      Escale aqui os seus jogadores. Não esqueça de adicionar posição, nome e a
+      camisa do jogador.
+    </h3>
+    <br />
+    <label for="name">Player name: </label>
+    <input type="text" id="name" name="name" />
+
+    <label for="position">Position player: </label>
+    <input type="text" id="position" name="position" />
+
+    <label for="number">Number: </label>
+    <input type="number" id="number" name="number" />
+
+    <button onclick="addPlayer()">Escalar</button>
+    <br />
+    <hr />
+
+    <h3>Remover jogador</h3>
+    <label for="numberRemove">Player number: </label>
+    <input type="number" id="numberRemove" name="numberRemove" />
+    <button onclick="removePlayer()">Remover jogador</button>
+    <br />
+    <hr />
+
+    <h3>Escalados</h3>
+    <ul id="lineup"></ul>
+
+    <script src="./indeex.js"></script>
+  </body>
+</html>
